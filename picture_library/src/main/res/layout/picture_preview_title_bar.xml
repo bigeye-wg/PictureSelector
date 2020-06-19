@@ -6,18 +6,19 @@
     <View
         android:id="@+id/titleViewBg"
         android:layout_width="match_parent"
-        android:layout_height="48dp"
+        android:layout_height="?actionBarSize"
         android:background="?attr/picture.ac_preview.title.bg" />
 
     <TextView
         android:id="@+id/picture_title"
         android:layout_width="match_parent"
-        android:layout_height="48dp"
+        android:layout_height="?actionBarSize"
         android:ellipsize="end"
         android:gravity="center"
         android:maxEms="11"
         android:textColor="?attr/picture.ac_preview.title.textColor"
-        android:textSize="18sp" />
+        android:textSize="17sp"
+        android:textStyle="bold" />
 
     <ImageView
         android:id="@+id/pictureLeftBack"
@@ -35,17 +36,17 @@
         android:layout_height="wrap_content"
         android:layout_alignTop="@id/titleViewBg"
         android:layout_alignParentRight="true"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="20dp"
         android:layout_marginRight="16dp"
         android:background="?attr/picture.checked.style"
         android:gravity="center"
         android:textColor="@color/picture_color_white"
-        android:textSize="12sp" />
+        android:textSize="14sp" />
 
     <View
         android:id="@+id/btnCheck"
         android:layout_width="45dp"
-        android:layout_height="48dp"
+        android:layout_height="?actionBarSize"
         android:layout_alignParentRight="true"
         android:background="@color/picture_color_transparent" />
 </merge>

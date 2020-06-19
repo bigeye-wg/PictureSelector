@@ -11,7 +11,7 @@
     <RelativeLayout
         android:id="@+id/select_bar_layout"
         android:layout_width="match_parent"
-        android:layout_height="45dp"
+        android:layout_height="55dp"
         android:layout_alignParentBottom="true"
         android:background="?attr/picture.ac_preview.bottom.bg"
         android:gravity="center_vertical">
