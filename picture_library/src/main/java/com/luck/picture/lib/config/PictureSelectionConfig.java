@@ -78,6 +78,7 @@ public final class PictureSelectionConfig implements Parcelable {
     public boolean isCamera;
     public boolean isGif;
     public boolean isWebp;
+    public boolean isHeic;
     public boolean isBmp;
     public boolean enablePreview;
     public boolean enPreviewVideo;
@@ -196,6 +197,7 @@ public final class PictureSelectionConfig implements Parcelable {
         isGif = false;
         isWebp = true;
         isBmp = true;
+        isHeic = false;
         focusAlpha = false;
         isCheckOriginalImage = false;
         isSingleDirectReturn = false;
@@ -352,6 +354,7 @@ public final class PictureSelectionConfig implements Parcelable {
         dest.writeByte(this.isGif ? (byte) 1 : (byte) 0);
         dest.writeByte(this.isWebp ? (byte) 1 : (byte) 0);
         dest.writeByte(this.isBmp ? (byte) 1 : (byte) 0);
+        dest.writeByte(this.isHeic ? (byte) 1 : (byte) 0);
         dest.writeByte(this.enablePreview ? (byte) 1 : (byte) 0);
         dest.writeByte(this.enPreviewVideo ? (byte) 1 : (byte) 0);
         dest.writeByte(this.enablePreviewAudio ? (byte) 1 : (byte) 0);
@@ -459,6 +462,7 @@ public final class PictureSelectionConfig implements Parcelable {
         this.isGif = in.readByte() != 0;
         this.isWebp = in.readByte() != 0;
         this.isBmp = in.readByte() != 0;
+        this.isHeic = in.readByte() != 0;
         this.enablePreview = in.readByte() != 0;
         this.enPreviewVideo = in.readByte() != 0;
         this.enablePreviewAudio = in.readByte() != 0;

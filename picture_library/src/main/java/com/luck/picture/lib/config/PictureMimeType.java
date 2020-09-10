@@ -59,6 +59,10 @@ public final class PictureMimeType {
         return MIME_TYPE_WEBP;
     }
 
+    public static String ofHEIC() {
+        return MIME_TYPE_HEIC;
+    }
+
     public static String of3GP() {
         return MIME_TYPE_3GP;
     }
@@ -81,6 +85,7 @@ public final class PictureMimeType {
     private final static String MIME_TYPE_BMP = "image/bmp";
     private final static String MIME_TYPE_GIF = "image/gif";
     private final static String MIME_TYPE_WEBP = "image/webp";
+    private final static String MIME_TYPE_HEIC = "image/heic";
 
     private final static String MIME_TYPE_3GP = "video/3gp";
     private final static String MIME_TYPE_MP4 = "video/mp4";

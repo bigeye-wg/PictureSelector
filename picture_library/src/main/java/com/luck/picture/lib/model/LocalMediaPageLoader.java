@@ -304,6 +304,12 @@ public final class LocalMediaPageLoader {
                                     }
                                 }
 
+                                if (!config.isHeic) {
+                                    if (mimeType.startsWith(PictureMimeType.ofHEIC())) {
+                                        continue;
+                                    }
+                                }
+
                                 int width = data.getInt
                                         (data.getColumnIndexOrThrow(PROJECTION_PAGE[3]));
 

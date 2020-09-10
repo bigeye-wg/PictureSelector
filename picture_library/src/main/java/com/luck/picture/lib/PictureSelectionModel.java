@@ -880,6 +880,15 @@ public class PictureSelectionModel {
     }
 
     /**
+     * @param isHeic Whether to open .heic
+     * @return
+     */
+    public PictureSelectionModel isHeic(boolean isHeic) {
+        selectionConfig.isHeic = isHeic;
+        return this;
+    }
+
+    /**
      * @param isBmp Whether to open .isBmp
      * @return
      */
